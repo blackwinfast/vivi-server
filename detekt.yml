@@ -1,0 +1,14 @@
+# Minimal detekt configuration used by CI.
+# This builds upon the default detekt rules but keeps the config lightweight.
+
+processors:
+  active: true
+
+build:
+  maxIssues: 0
+
+comments:
+  active: true
+
+formatting:
+  active: true

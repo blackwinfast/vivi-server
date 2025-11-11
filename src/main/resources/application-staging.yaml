@@ -1,0 +1,12 @@
+dao:
+  mode: sqlite
+  verifySchemaOnStartup: true
+
+# Staging DB (file-backed) — keep separate from dev/test
+db:
+  url: jdbc:sqlite:data/staging.db
+  driver: org.sqlite.JDBC
+
+# Any staging-specific settings can go here
+server:
+  port: 8080
