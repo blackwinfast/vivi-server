@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ArgumentListWrapping:AnniversaryBoundaryTests.kt$AnniversaryBoundaryTests$(debugEnabled = true, anniversaryDao = com.example.repositories.InMemoryAnniversaryDao())</ID>
+    <ID>ArgumentListWrapping:AnniversaryService.kt$LocalDateSerializer$("LocalDate", kotlinx.serialization.descriptors.PrimitiveKind.STRING)</ID>
+    <ID>ArgumentListWrapping:AnniversaryService.kt$LocalDateSerializer$(decoder.decodeString())</ID>
+    <ID>ArgumentListWrapping:AnniversaryService.kt$LocalDateSerializer$(value.toString())</ID>
+    <ID>ArgumentListWrapping:AnniversaryUI.kt$AnniversaryUI$(userId)</ID>
+    <ID>ArgumentListWrapping:AnniversaryUI.kt$AnniversaryUI$(userId, days)</ID>
+    <ID>ArgumentListWrapping:ConcurrencyTests.kt$ConcurrencyTests$(i.toLong())</ID>
+    <ID>ArgumentListWrapping:ConcurrencyTests.kt$ConcurrencyTests$(userId, event, com.example.models.EmotionType.HAPPY, 0.1, com.example.models.EventType.PRAISE, now.plusSeconds(i.toLong()))</ID>
+    <ID>ArgumentListWrapping:ConcurrencyTests.kt$ConcurrencyTests$(userId, title, LocalDate.of(2000, 1, 1).plusDays((i % 365).toLong()), com.example.services.CreatorType.USER, recurring = true)</ID>
+    <ID>ArgumentListWrapping:DatabaseFactory.kt$DatabaseFactory$("Missing tables after migration: ${missing.joinToString(", ")}. Migrations may have failed or database URL is incorrect: $jdbcUrl")</ID>
+    <ID>ArgumentListWrapping:EmotionDisplayTest.kt$EmotionDisplayTest$(1)</ID>
+    <ID>ArgumentListWrapping:EmotionDisplayTest.kt$EmotionDisplayTest$(userId = userId, event = "用户说你好棒", emotionType = EmotionType.HAPPY, intensity = 0.6, eventType = EventType.PRAISE, timestamp = now.minusDays(1))</ID>
+    <ID>ArgumentListWrapping:EmotionMemory.kt$LocalDateTimeSerializer$("LocalDateTime", kotlinx.serialization.descriptors.PrimitiveKind.STRING)</ID>
+    <ID>ArgumentListWrapping:EmotionMemory.kt$LocalDateTimeSerializer$(decoder.decodeString())</ID>
+    <ID>ArgumentListWrapping:EmotionMemory.kt$LocalDateTimeSerializer$(value.toString())</ID>
+    <ID>ArgumentListWrapping:UpcomingAnniversaryTest.kt$UpcomingAnniversaryTest$(titles.contains("RecurringLater") || titles.contains("OneTimeFuture"), "Expected a Nov13 anniversary in upcoming7, got $titles")</ID>
+    <ID>ArgumentListWrapping:UpcomingAnniversaryTest.kt$UpcomingAnniversaryTest$(titles30.contains("OneTimeFuture") || titles30.contains("RecurringLater"), "Expected Nov13 in upcoming30, got $titles30")</ID>
+    <ID>ComplexCondition:EmotionEngine.kt$EmotionEngine$lowerEvent.contains("不好") || lowerEvent.contains("差") || lowerEvent.contains("bad") || lowerEvent.contains("wrong")</ID>
+    <ID>ComplexCondition:EmotionEngine.kt$EmotionEngine$lowerEvent.contains("好棒") || lowerEvent.contains("很棒") || lowerEvent.contains("厉害") || lowerEvent.contains("优秀") || lowerEvent.contains("great") || lowerEvent.contains("good job")</ID>
+    <ID>ComplexCondition:EmotionEngine.kt$EmotionEngine$lowerEvent.contains("抱歉") || lowerEvent.contains("对不起") || lowerEvent.contains("sorry") || lowerEvent.contains("apologize")</ID>
+    <ID>ComplexCondition:EmotionEngine.kt$EmotionEngine$lowerEvent.contains("需要") || lowerEvent.contains("帮忙") || lowerEvent.contains("help") || lowerEvent.contains("need")</ID>
+    <ID>ConstructorParameterNaming:AIModelService.kt$OpenRouterChoice$val finish_reason: String? = null</ID>
+    <ID>ConstructorParameterNaming:AIModelService.kt$OpenRouterRequest$val max_tokens: Int = 1024</ID>
+    <ID>ConstructorParameterNaming:AIModelService.kt$OpenRouterUsage$val completion_tokens: Int? = null</ID>
+    <ID>ConstructorParameterNaming:AIModelService.kt$OpenRouterUsage$val prompt_tokens: Int? = null</ID>
+    <ID>ConstructorParameterNaming:AIModelService.kt$OpenRouterUsage$val total_tokens: Int? = null</ID>
+    <ID>ConstructorParameterNaming:ChatModels.kt$ChatRequest$val input_text: String</ID>
+    <ID>ConstructorParameterNaming:ChatModels.kt$ChatRequest$val user_id: String</ID>
+    <ID>ConstructorParameterNaming:ChatModels.kt$ChatResponse$val remaining_quota: Int? = null</ID>
+    <ID>ConstructorParameterNaming:ChatModels.kt$ChatResponse$val response_text: String</ID>
+    <ID>ConstructorParameterNaming:ChatModels.kt$ChatResponse$val response_type: String = "CHAT_MESSAGE"</ID>
+    <ID>CyclomaticComplexMethod:EmotionAnalysisService.kt$EmotionAnalysisService$suspend fun analyzeEmotion(text: String): EmotionType</ID>
+    <ID>CyclomaticComplexMethod:EmotionDisplay.kt$EmotionDisplay$fun renderEmotion( userEmotions: UserEmotionStates, userId: String, todayAnniversaries: List&lt;Anniversary> = emptyList(), now: LocalDateTime = LocalDateTime.now(), ): Map&lt;String, Any></ID>
+    <ID>CyclomaticComplexMethod:EmotionEngine.kt$EmotionEngine$private fun detectEventType(event: String): EventType</ID>
+    <ID>CyclomaticComplexMethod:PersonalityPromptBuilder.kt$PersonalityPromptBuilder$private fun buildEmotionContext(userEmotions: UserEmotionStates): String</ID>
+    <ID>ForbiddenComment:EmotionAnalysisService.kt$EmotionAnalysisService$// TODO: 集成真实的情绪分析 API</ID>
+    <ID>InvalidPackageDeclaration:AIModelService.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:AdminApiTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:AdminServiceCrudTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:AdminSqliteIntegrationTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryBoundaryTests.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryService.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryServiceSpec.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryUI.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:AnniversaryUITest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:Application.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:ApplicationTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:ChatModels.kt$package com.example.models</ID>
+    <ID>InvalidPackageDeclaration:ConcurrencyTests.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:DatabaseFactory.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:EmotionAnalysisService.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:EmotionDisplay.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:EmotionDisplayTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:EmotionEngine.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:EmotionMemory.kt$package com.example.models</ID>
+    <ID>InvalidPackageDeclaration:EmotionMemoryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:EmotionReplayTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:EmotionState.kt$package com.example.models</ID>
+    <ID>InvalidPackageDeclaration:InMemoryAnniversaryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:InMemoryEmotionMemoryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:Main.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:ModelSelectionService.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:Monitoring.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:PersonalityPromptBuilder.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:Routing.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:RoutingSafe.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:Serialization.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:SqliteAnniversaryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:SqliteDaoTests.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:SqliteEmotionMemoryDao.kt$package com.example.repositories</ID>
+    <ID>InvalidPackageDeclaration:UpcomingAnniversaryTest.kt$package com.example</ID>
+    <ID>InvalidPackageDeclaration:UserEmotionService.kt$package com.example.services</ID>
+    <ID>InvalidPackageDeclaration:UserService.kt$package com.example.services</ID>
+    <ID>LongMethod:EmotionDisplay.kt$EmotionDisplay$fun renderEmotion( userEmotions: UserEmotionStates, userId: String, todayAnniversaries: List&lt;Anniversary> = emptyList(), now: LocalDateTime = LocalDateTime.now(), ): Map&lt;String, Any></ID>
+    <ID>LongMethod:Main.kt$fun main()</ID>
+    <ID>LongMethod:RoutingSafe.kt$fun Application.configureRouting()</ID>
+    <ID>LongParameterList:AnniversaryService.kt$AnniversaryService$( userId: String, title: String, date: LocalDate, createdBy: CreatorType, description: String? = null, recurring: Boolean = false, )</ID>
+    <ID>LongParameterList:EmotionMemory.kt$EmotionMemory$( userId: String, event: String, emotionType: EmotionType, intensity: Double, eventType: EventType = EventType.PRAISE, timestamp: LocalDateTime = LocalDateTime.now(), )</ID>
+    <ID>MagicNumber:AIModelService.kt$AIModelService$0.6</ID>
+    <ID>MagicNumber:AIModelService.kt$AIModelService$0.7</ID>
+    <ID>MagicNumber:AIModelService.kt$AIModelService$0.8</ID>
+    <ID>MagicNumber:AIModelService.kt$AIModelService$0.9</ID>
+    <ID>MagicNumber:AnniversaryService.kt$AnniversaryService$0.3</ID>
+    <ID>MagicNumber:DatabaseFactory.kt$DatabaseFactory$3</ID>
+    <ID>MagicNumber:DatabaseFactory.kt$DatabaseFactory$30000</ID>
+    <ID>MagicNumber:EmotionAnalysisService.kt$EmotionAnalysisService$0.5</ID>
+    <ID>MagicNumber:EmotionAnalysisService.kt$EmotionAnalysisService$1000</ID>
+    <ID>MagicNumber:EmotionDisplay.kt$EmotionDisplay$0.2</ID>
+    <ID>MagicNumber:EmotionDisplay.kt$EmotionDisplay$0.3</ID>
+    <ID>MagicNumber:EmotionDisplay.kt$EmotionDisplay$0.5</ID>
+    <ID>MagicNumber:EmotionDisplay.kt$EmotionDisplay$0.8</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.1</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.2</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.25</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.3</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.4</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.5</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.6</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$0.8</ID>
+    <ID>MagicNumber:EmotionEngine.kt$EmotionEngine$5</ID>
+    <ID>MagicNumber:EmotionMemory.kt$EmotionMemory$0.15</ID>
+    <ID>MagicNumber:EmotionMemory.kt$EmotionMemory$0.2</ID>
+    <ID>MagicNumber:EmotionMemory.kt$EmotionMemory$0.3</ID>
+    <ID>MagicNumber:EmotionState.kt$UserEmotionStates$0.03</ID>
+    <ID>MagicNumber:EmotionState.kt$UserEmotionStates$0.05</ID>
+    <ID>MagicNumber:EmotionState.kt$UserEmotionStates$0.1</ID>
+    <ID>MagicNumber:EmotionState.kt$UserEmotionStates$0.5</ID>
+    <ID>MagicNumber:InMemoryEmotionMemoryDao.kt$InMemoryEmotionMemoryDao$100</ID>
+    <ID>MagicNumber:Main.kt$0.5</ID>
+    <ID>MagicNumber:Main.kt$0.7</ID>
+    <ID>MagicNumber:PersonalityPromptBuilder.kt$PersonalityPromptBuilder$0.2</ID>
+    <ID>MagicNumber:PersonalityPromptBuilder.kt$PersonalityPromptBuilder$0.5</ID>
+    <ID>MagicNumber:PersonalityPromptBuilder.kt$PersonalityPromptBuilder$0.8</ID>
+    <ID>MagicNumber:SqliteAnniversaryDao.kt$AnniversariesTable$1000</ID>
+    <ID>MagicNumber:SqliteAnniversaryDao.kt$AnniversariesTable$16</ID>
+    <ID>MagicNumber:SqliteAnniversaryDao.kt$AnniversariesTable$200</ID>
+    <ID>MagicNumber:SqliteAnniversaryDao.kt$AnniversariesTable$32</ID>
+    <ID>MagicNumber:SqliteAnniversaryDao.kt$AnniversariesTable$500</ID>
+    <ID>MagicNumber:SqliteEmotionMemoryDao.kt$EmotionMemoriesTable$1000</ID>
+    <ID>MagicNumber:SqliteEmotionMemoryDao.kt$EmotionMemoriesTable$200</ID>
+    <ID>MagicNumber:SqliteEmotionMemoryDao.kt$EmotionMemoriesTable$64</ID>
+    <ID>MagicNumber:UserService.kt$UserService$10</ID>
+    <ID>MagicNumber:UserService.kt$UserService$100</ID>
+    <ID>MagicNumber:UserService.kt$UserService$1000</ID>
+    <ID>MaxLineLength:AIModelService.kt$AIModelService$com.example.models.EmotionType.EMERGENCY -> "我注意到你现在的情绪非常低落。请记住，你并不孤单。如果你需要帮助，可以联系：生命线 1995（台湾）或当地的心理健康支持热线。"</ID>
+    <ID>MaxLineLength:AnniversaryBoundaryTests.kt$AnniversaryBoundaryTests$val svc = AnniversaryService(debugEnabled = true, anniversaryDao = com.example.repositories.InMemoryAnniversaryDao())</ID>
+    <ID>MaxLineLength:AnniversaryService.kt$AnniversaryService$fun</ID>
+    <ID>MaxLineLength:AnniversaryService.kt$LocalDateSerializer$override fun deserialize(decoder: kotlinx.serialization.encoding.Decoder): LocalDate</ID>
+    <ID>MaxLineLength:AnniversaryService.kt$LocalDateSerializer$override fun serialize(encoder: kotlinx.serialization.encoding.Encoder, value: LocalDate)</ID>
+    <ID>MaxLineLength:AnniversaryService.kt$LocalDateSerializer$override val descriptor = kotlinx.serialization.descriptors.PrimitiveSerialDescriptor("LocalDate", kotlinx.serialization.descriptors.PrimitiveKind.STRING)</ID>
+    <ID>MaxLineLength:AnniversaryUI.kt$AnniversaryUI$fun</ID>
+    <ID>MaxLineLength:AnniversaryUI.kt$AnniversaryUI$val list = if (today != null) anniversaryService.getTodayAnniversaries(userId, today) else anniversaryService.getTodayAnniversaries(userId)</ID>
+    <ID>MaxLineLength:AnniversaryUI.kt$AnniversaryUI$val upcoming = if (today != null) anniversaryService.getUpcomingAnniversaries(userId, days, today) else anniversaryService.getUpcomingAnniversaries(userId, days)</ID>
+    <ID>MaxLineLength:ConcurrencyTests.kt$ConcurrencyTests$mem.recordEvent(userId, event, com.example.models.EmotionType.HAPPY, 0.1, com.example.models.EventType.PRAISE, now.plusSeconds(i.toLong()))</ID>
+    <ID>MaxLineLength:ConcurrencyTests.kt$ConcurrencyTests$svc.addAnniversary(userId, title, LocalDate.of(2000, 1, 1).plusDays((i % 365).toLong()), com.example.services.CreatorType.USER, recurring = true)</ID>
+    <ID>MaxLineLength:DatabaseFactory.kt$DatabaseFactory$error("Missing tables after migration: ${missing.joinToString(", ")}. Migrations may have failed or database URL is incorrect: $jdbcUrl")</ID>
+    <ID>MaxLineLength:EmotionDisplayTest.kt$EmotionDisplayTest$memory.recordEvent(userId = userId, event = "用户说你好棒", emotionType = EmotionType.HAPPY, intensity = 0.6, eventType = EventType.PRAISE, timestamp = now.minusDays(1))</ID>
+    <ID>MaxLineLength:EmotionMemory.kt$LocalDateTimeSerializer$override fun deserialize(decoder: kotlinx.serialization.encoding.Decoder): LocalDateTime</ID>
+    <ID>MaxLineLength:EmotionMemory.kt$LocalDateTimeSerializer$override fun serialize(encoder: kotlinx.serialization.encoding.Encoder, value: LocalDateTime)</ID>
+    <ID>MaxLineLength:EmotionMemory.kt$LocalDateTimeSerializer$override val descriptor = kotlinx.serialization.descriptors.PrimitiveSerialDescriptor("LocalDateTime", kotlinx.serialization.descriptors.PrimitiveKind.STRING)</ID>
+    <ID>MaxLineLength:SqliteEmotionMemoryDao.kt$SqliteEmotionMemoryDao$EmotionMemoriesTable.select { (EmotionMemoriesTable.userId eq userId) and (EmotionMemoriesTable.event eq event) }</ID>
+    <ID>MaxLineLength:SqliteEmotionMemoryDao.kt$SqliteEmotionMemoryDao$EmotionMemoriesTable.select { (EmotionMemoriesTable.userId eq userId) and (EmotionMemoriesTable.event eq event) }.count().toInt()</ID>
+    <ID>MaxLineLength:UpcomingAnniversaryTest.kt$UpcomingAnniversaryTest$assertTrue(titles.contains("RecurringLater") || titles.contains("OneTimeFuture"), "Expected a Nov13 anniversary in upcoming7, got $titles")</ID>
+    <ID>MaxLineLength:UpcomingAnniversaryTest.kt$UpcomingAnniversaryTest$assertTrue(titles30.contains("OneTimeFuture") || titles30.contains("RecurringLater"), "Expected Nov13 in upcoming30, got $titles30")</ID>
+    <ID>MaxLineLength:UserEmotionService.kt$UserEmotionService$fun</ID>
+    <ID>MaximumLineLength:AIModelService.kt$AIModelService$ </ID>
+    <ID>MaximumLineLength:AnniversaryBoundaryTests.kt$AnniversaryBoundaryTests$ </ID>
+    <ID>MaximumLineLength:AnniversaryService.kt$AnniversaryService$ </ID>
+    <ID>MaximumLineLength:AnniversaryService.kt$LocalDateSerializer$ </ID>
+    <ID>MaximumLineLength:AnniversaryUI.kt$AnniversaryUI$ </ID>
+    <ID>MaximumLineLength:ConcurrencyTests.kt$ConcurrencyTests$ </ID>
+    <ID>MaximumLineLength:DatabaseFactory.kt$DatabaseFactory$ </ID>
+    <ID>MaximumLineLength:EmotionDisplayTest.kt$EmotionDisplayTest$ </ID>
+    <ID>MaximumLineLength:EmotionMemory.kt$LocalDateTimeSerializer$ </ID>
+    <ID>MaximumLineLength:SqliteEmotionMemoryDao.kt$SqliteEmotionMemoryDao$ </ID>
+    <ID>MaximumLineLength:UpcomingAnniversaryTest.kt$UpcomingAnniversaryTest$ </ID>
+    <ID>MaximumLineLength:UserEmotionService.kt$UserEmotionService$ </ID>
+    <ID>ParameterListWrapping:AnniversaryService.kt$AnniversaryService$(id: String, title: String? = null, date: LocalDate? = null, description: String? = null, recurring: Boolean? = null)</ID>
+    <ID>PrintStackTrace:AIModelService.kt$AIModelService$e</ID>
+    <ID>PropertyWrapping:AnniversaryBoundaryTests.kt$AnniversaryBoundaryTests$val svc = AnniversaryService(debugEnabled = true, anniversaryDao = com.example.repositories.InMemoryAnniversaryDao())</ID>
+    <ID>ReturnCount:EmotionAnalysisService.kt$EmotionAnalysisService$suspend fun analyzeEmotion(text: String): EmotionType</ID>
+    <ID>ReturnCount:EmotionEngine.kt$EmotionEngine$private fun detectEventType(event: String): EventType</ID>
+    <ID>ReturnCount:ModelSelectionService.kt$ModelSelectionService$fun selectModel(emotion: EmotionType, userTier: UserTier): AIModel</ID>
+    <ID>SwallowedException:RoutingSafe.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:AIModelService.kt$AIModelService$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RoutingSafe.kt$e: Exception</ID>
+    <ID>UnusedParameter:AIModelService.kt$AIModelService$emotion: com.example.models.EmotionType</ID>
+    <ID>UnusedParameter:AIModelService.kt$AIModelService$isHighQuality: Boolean</ID>
+    <ID>UnusedParameter:AIModelService.kt$AIModelService$modelName: String</ID>
+    <ID>UnusedParameter:EmotionDisplay.kt$EmotionDisplay$userId: String</ID>
+    <ID>UnusedParameter:EmotionMemory.kt$EmotionMemory$userId: String</ID>
+    <ID>UnusedParameter:PersonalityPromptBuilder.kt$PersonalityPromptBuilder$isHighQuality: Boolean = true</ID>
+    <ID>UnusedPrivateMember:EmotionAnalysisService.kt$EmotionAnalysisService$private suspend fun analyzeWithExternalAPI(text: String): EmotionType</ID>
+    <ID>UnusedPrivateProperty:EmotionAnalysisService.kt$EmotionAnalysisService$val trimmedText = text.trim()</ID>
+    <ID>UnusedPrivateProperty:RoutingSafe.kt$val emotionMemoryDao = if (daoMode == "sqlite") { SqliteEmotionMemoryDao( environment.config.propertyOrNull("db.url")?.getString() ?: "jdbc:sqlite:data/dev.db", ) } else { InMemoryEmotionMemoryDao() }</ID>
+    <ID>Wrapping:SqliteEmotionMemoryDao.kt$SqliteEmotionMemoryDao$(EmotionMemoriesTable.userId eq userId) and (EmotionMemoriesTable.event eq event)</ID>
+  </CurrentIssues>
+</SmellBaseline>
