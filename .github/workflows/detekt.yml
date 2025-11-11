@@ -24,4 +24,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-      - run: ./gradlew detekt --no-daemon
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+        working-directory: .
+      - name: Run detekt static analysis
+        run: ./gradlew detekt --no-daemon
+        working-directory: .
